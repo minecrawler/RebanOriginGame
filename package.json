@@ -5,7 +5,7 @@
     "babylonjs": "^4.0.3",
     "babylonjs-loaders": "^4.0.3",
     "regenerator-runtime": "^0.13.3",
-    "sim-ecs": "NSSTC/sim-ecs#master"
+    "sim-ecs": "github:NSSTC/sim-ecs#master"
   },
   "devDependencies": {
     "@babel/core": "^7.6.0",
