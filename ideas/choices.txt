@@ -1,0 +1,7 @@
+- "Are you the puppet or the puppeteer?"
+    - inb4 missions
+    - if puppet, play as the main character in 1st person and get help from an(other) AI
+    - if puppeteer, play as flying robot entity which gives commands to the main character (controlled by an(other) AI)
+    - all actions are with the main character, none are with the puppeteer (the main character is just that for a reason)
+    - the puppeteer allows to play the game as 2D platformer and strategy game from the top
+    - the main character is more about jump&run / hack'nslash in 3D

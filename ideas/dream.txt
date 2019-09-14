@@ -1,0 +1,4 @@
+- explore linear dungeon with relics. They give away information
+    - learn about a secret: the relics hold more hidden information
+    - second way to interact with relics, which reveals interesting trivia
+    - will have to go back to find all trivia
