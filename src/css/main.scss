@@ -1,0 +1,41 @@
+#game-intro {
+  align-content: center;
+  align-items: center;
+  background: black;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  justify-items: center;
+  position: fixed;
+  transition-duration: 1s;
+  transition-property: opacity;
+  transition-timing-function: ease-in-out;
+  width: 100vw;
+  z-index: 1000;
+}
+
+#game-intro.hide {
+  opacity: 0;
+}
+
+#game-intro > img {
+  margin: 10vw;
+  max-height: 80vh;
+  max-width: 80vw;
+  opacity: 0;
+  transition-duration: 1s;
+  transition-property: opacity;
+  transition-timing-function: ease-in-out;
+}
+
+#game-intro > span {
+  opacity: 0;
+  transition-delay: 1s;
+  transition-duration: .5s;
+  transition-property: opacity;
+  transition-timing-function: ease-in-out;
+}
+
+#game-intro > .show {
+  opacity: 1;
+}
