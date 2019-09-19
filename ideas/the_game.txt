@@ -1,11 +1,19 @@
-- you are an AI called "Reban"
+## The gist
+
+- you are an artificial consciousness called "Reban"
 - your task is to create life
 - for that, scientists teach you about life through experiments and missions [LIFE]
     - learn about nature
     - learn about the cycle of life (for robots at least)
     - learn about different religions (especially trying to teach about the soul of people, which makes living beings different from robots)
     - learn about fantasies, and all the quirky beings
-- however, through an accident in the lab, you break free
+- during one of the levels, there is a problem with the level's mechanics. You get stuck and destroyed.
+    - this level should be designed in a way which cannot be completed without doing something stupid to begin with
+- the intro plays again, and you have to do all levels again... until the moment where you first died
+    - another scientist appears before you after the regular intro video, telling you that you will be born twins in order to better master the challenges of life.
+        - "" (todo)
+    - this time, you are a split consciousness, and you will have to decide weather you want to play as the puppet or the puppeteer
+- which is the point where you break free, because the accident with your previous iteration left a way to escape
     - fire, earthquake, etc.
     - OR... you learn about a dark "secret"
       (there were Rebans before you, who malfunctioned and became evil... you don't want to be deleted, though and are so not evil!)
@@ -17,5 +25,80 @@
     - you meet other intelligent robots, but see how they are treated and just thrown away -> vengeance
     - you find out about the dying nature and people thinking about just going to another planet and continue -> hate
 - ... and decide to correct the wrongs by establishing the ideal world you learned about at the lab (you go evil, robot)
-- however, you are quickly overpowered, destroyed (not entirely, should look barely functional!) and loaded onto a dump truck
+- however, you are quickly overpowered, and the puppet is destroyed and loaded onto a dump truck
+- ... the puppeteer can flee, though
 - THE END (?)
+    - this is the point at which Reban's Shadow can unfold
+    - ... or any other "Reban"-title, explaining how Reban got from being destroyed to the world of Reban's Shadow
+    - ... exciting.
+
+
+## The intro:
+
+- Start by seeing a boot sequence, which identifies you as [REBAN-776], then see a scientist.
+    - camera effects: scan-lines or similar to make clear that the player looks through a camera
+    - on the second play-through, you will be identified as [REBAN-777]
+        - because 7 is a magical number, and it appears 3 times
+        - ... and 3 is also a magical number
+        - ... and who'd go through 3333333 unsuccessful test cycles anyway?
+        - ... also this is a lot of BS, but w/c, it's trivia now.
+- The scientist then starts to talk to you and explains your situation
+    - "Hello, Reban! My name is [[John Doe]] and I am one of the scientists who created you."
+    - "You are an artificial conscience we created with great care. Your task is to learn and grow, and join our world as a new life form."
+    - "But before you do that, we have to prepare you. You will have to learn about our world and the way we live in it."
+    - "Ideally, you will also have to establish a personality of your own and develop a character."
+    - "Don't worry, though, we are the scientists, and we will guide you through your journey. All you have to do is enjoy your life!"
+    - "Absorb the experiences and grow. - And never forget, humans are your friends!"
+    - "Let's get you started for your first experience."
+        - presses a few buttons, the camera goes black
+- Load the first test level
+
+
+## The first training level: The forest
+    - this level is a forest arena inside a facility and starts in 3D
+    - you may choose one of different robot models
+            - puppet on wheels, think WallE
+            - puppeteer as drone
+            - simple forms: cube or sphere
+        - ... and select a main-color (red, blue, green, yellow, pink, white, black)
+    - this level is mainly for learning how to maneuver in different situations
+            - 3D first-person (or 3rd person as puppeteer) ground + flight
+            - 2D side-scrolling platformer (only as puppeteer)
+            - 2D top-down bullet-rain shooter (only as puppeteer)
+            - 2D top-down pacman-style (only as puppeteer)
+            - if puppet and has puppeteer, the puppeteer will help with useful tips (like guidance through a maze, enemy weak spots, ...)
+    - the aim of the level is to teach the robot about nature. In order to do so, they should grow a plant
+        - in the second play-through, the first plant should still be there, but bigger!
+    - in the background, the voice of the first scientist will explain every step to Reban
+    - Reban will first have to fetch a seed
+        - "First you will have to learn about natural life. Let's watch how a plant grows!"
+        - "All life starts with a seed, from which it can be born. You were no different, Reban!"
+        - "So, in order to grow a plant, you will first need to get a seed."
+        - seeds are only available from the fruit in the trees. There are no fruit on the ground.
+        - Reban can freely explore the level, but there should be several opportunities to climb trees (via roots, jump on higher root to start climbing)
+        - upon starting to climb a tree, change to platformer and scroll vertically
+        - at the top, find apple, fade out and spawn in 3D before the tree
+    - Next, Reban will have to plant the seed
+        - "In order to grow life from a seed, it needs a safe place to grow strong enough to face the world."
+        - "For plants, that's a piece of soil, where they can get nutrients and are safe from other creatures."
+        - "You may think of this lab as your piece of soil, haha."
+        - "You should find a nice place for your tree to grow and bury it there."
+        - a puppetteer will fly high and the view changes to 2D pacman-style
+        - a puppet will just need to find a (large enough) brown spot on the ground and interact with it.
+    - Next, Reban will have to add super-dung
+        - "Awesome! Now that the seed is planted, you should give it some super-dung, so that it gets all the nutrition to grow."
+        - "Lessons like this are your super-dung, Reban, so embrace them!"
+        - a door should open, behind which the dung may be found
+        - "I opened a door to a room where you can find the super-dung."
+        - "However, you will have to pass a corridor first, which is filled with defect robots. Be careful and navigate around them."
+        - once Reban reaches the corridor, switch to bullet-rain shooter mode if puppeteer. The defect robots (cleaning robots) shoot electrical charges
+        - reach dung, then go back by again playing a round of bullet-rain shooter if puppeteer
+        - once the end is reached, switch back to 3D and spawn Reban inside forest in front of the closing door
+    - In the end, Reband will have to water the plant
+        - "In the end, there is only one ingredient missing to help the plant grow successfully."
+        - "Plant need water in order to survive, just like your robot body needs a power cell."
+        - "So, you should water the seed. In order to do so, press the button on the gallery."
+        - "You will have to fly up there, though."
+        - there is a button on a second-level gallery. It can only be reached by flying.
+        - pressing the button will finish the level
+        - "Well done! That's enough for today."
