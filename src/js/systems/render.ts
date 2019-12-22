@@ -3,16 +3,12 @@ import {FreeCamera, MeshBuilder, Scene, Vector3, Engine} from 'babylonjs';
 import {world} from "../ecs";
 
 export class RenderSystem extends System {
-    protected camera: FreeCamera;
     protected canvasEle: HTMLCanvasElement;
-    protected engine: Engine;
     protected scene: Scene;
 
     constructor() {
         super();
-        this.setComponentQuery({
-            //
-        });
+        this.setComponentQuery([]);
 
         // init
         {
@@ -21,29 +17,23 @@ export class RenderSystem extends System {
             this.canvasEle = canvasEle;
         }
 
-        this.engine = new Engine(this.canvasEle, true);
-        this.scene = new Scene(this.engine);
-        this.camera = new FreeCamera('cam', new Vector3(0, 5, -10), this.scene);
+        const engine = new Engine(this.canvasEle, true, {
+            //
+        }, true);
+        this.scene = new Scene(engine);
+        const camera = new FreeCamera('cam', new Vector3(0, 5, -10), this.scene);
+
+        world
+            .addResource(engine)
+            .addResource(this.scene)
+            .addResource(camera);
 
         // todo: should be entity
-        this.camera.setTarget(Vector3.Zero());
-        this.camera.attachControl(this.canvasEle, false);
-        this.scene.setActiveCameraByID(this.camera.id);
+        camera.setTarget(Vector3.Zero());
+        camera.attachControl(this.canvasEle, false);
+        this.scene.setActiveCameraByID(camera.id);
 
-        {// todo: test
-            // Create a built-in "sphere" shape; with 16 segments and diameter of 2.
-            let sphere = MeshBuilder.CreateSphere('sphere',
-                {segments: 16, diameter: 2}, this.scene);
-
-            // Move the sphere upward 1/2 of its height.
-            sphere.position.y = 1;
-
-            // Create a built-in "ground" shape.
-            let ground = MeshBuilder.CreateGround('ground',
-                {width: 6, height: 6, subdivisions: 2}, this.scene);
-        }
-
-        window.addEventListener('resize', () => this.engine.resize());
+        window.addEventListener('resize', () => engine.resize());
     }
 
     async update(world: IWorld, entities: IEntity[], deltaTime: number): Promise<void> {
@@ -52,4 +42,6 @@ export class RenderSystem extends System {
 }
 
 world.addResource(RenderSystem);
-world.registerSystemQuick(world.getResource(RenderSystem));
+
+import {InputSystem} from "./input";
+world.registerSystemQuick(world.getResource(RenderSystem), [InputSystem]);

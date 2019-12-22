@@ -1,0 +1,24 @@
+{"producer":{"name":"Blender","version":"2.81 (sub 16)","exporter_version":"6.2.3","file":"test.babylon"},
+"autoClear":true,"clearColor":[0.0509,0.0509,0.0509],"gravity":[0,-9.81,0],
+"materials":[],
+"multiMaterials":[],
+"skeletons":[],
+"meshes":[{"name":"Plane","id":"Plane","billboardMode":0,"position":[0,0,0],"rotation":[0,0,0],"scaling":[100,1,100],"isVisible":true,"freezeWorldMatrix":false,"isEnabled":true,"checkCollisions":true,"receiveShadows":true,"pickable":true,"tags":""
+,"positions":[1,0,-1,-1,0,1,-1,0,-1,1,0,-1,-1,0,-1,1,0,-1,-1,0,-1,1,0,-1,-1,0,-1,-1,0,-1,1,0,-1,1,0,1,1,50.1419,1,-1,0,1,1,0,1,-1,50.1419,-1,1,0,-1
+,-1,0,-1,1,50.1419,-1,1,0,1,1,0,-1,-1,50.1419,1,-1,0,-1,-1,0,1,1,0,-1,-1,0,-1,-1,0,-1,-1,0,-1,1,0,-1,-1,0,1,-1,0,-1,1,0,-1,1,0,1,1,0,-1
+,-1,50.1419,1,-1,0,1,1,50.1419,-1,1,0,-1,1,50.1419,1,1,0,1,-1,50.1419,-1,-1,0,-1]
+,"normals":[0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,1,0,0,0,-1,0,0,-1,0,0,-1,0,0,1,0,0,1
+,0,0,1,-1,0,0,-1,0,0,-1,0,0,1,0,0,1,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0
+,0,0,-1,0,0,-1,0,0,1,0,0,1,-1,0,0,-1,0,0,1,0,0,1,0,0]
+,"uvs":[1,0,0,1,0,0,1,0,0,0,1,0,0,0,1,0,0,0,0,0,1,0,1,1,1,1,0,1,1,1,0,0,1,0,0,0,1,0,1,1,1,0,0,1,0,0,0,1,1,0
+,0,0,0,0,0,0,1,0,0,1,0,0,1,0,1,1,1,0,0,1,0,1,1,0,1,0,1,1,1,1,0,0,0,0]
+,"indices":[0,1,2,3,4,5,5,6,7,4,8,9,1,10,11,12,13,14,15,16,17,18,19,20,21,22,23,0,11,1,24,25,4,5,4,6,4,26,8,6,4,27,5,7,28,29,6,30,5,31
+,32,1,2,33,12,34,35,15,36,37,18,38,39,21,40,41]
+,"subMeshes":[{"materialIndex":0,"verticesStart":0,"verticesCount":42,"indexStart":0,"indexCount":66}]
+,"instances":[]}
+],
+"morphTargetManagers":[],
+"cameras":[{"name":"cam","id":"cam","position":[94.75,39.69,-77.26],"rotation":[0.3061,-1.0139,0],"fov":0.6911,"minZ":0.1,"maxZ":10000,"speed":1,"inertia":0.9,"checkCollisions":false,"applyGravity":false,"ellipsoid":[0.2,0.9,0.2],"cameraRigMode":0,"interaxial_distance":0.0637,"type":"UniversalCamera"}],"activeCameraID":"cam",
+"lights":[{"name":"PL1","id":"PL1","type":0,"position":[69.8432,30,-75.1153],"range":60,"intensityMode":0,"intensity":1,"diffuse":[1,0.8544,0.3932],"specular":[1,0.8544,0.3932],"radius":50},{"name":"PL2","id":"PL2","type":0,"position":[-43.3469,21.8031,74.2499],"range":70,"intensityMode":0,"intensity":1,"diffuse":[0.0034,0.0036,1],"specular":[0.0034,0.0036,1],"radius":70},{"name":"PL3","id":"PL3","type":0,"position":[65.7942,10,38.0352],"range":40,"intensityMode":0,"intensity":1,"diffuse":[1,0,0.0363],"specular":[1,0,0.0363],"radius":30}],
+"shadowGenerators":[]
+}

@@ -1,5 +1,5 @@
-import 'regenerator-runtime/runtime';
+import 'regenerator-runtime'
+import 'babylonjs'
+import 'babylonjs-loaders'
 
-import 'babylonjs';
-import 'babylonjs-loaders';
-import './main';
+import './main'

@@ -1,0 +1,32 @@
+Exporter version: 6.2.3, Blender version: 2.81 (sub 16)
+========= Conversion from Blender to Babylon.js =========
+	Scene settings used :
+		inline textures     :  false
+		Material Type       :  PBR
+		Positions Precision :  4
+		Normals Precision   :  3
+		UVs Precision       :  3
+		Vert Color Precision:  3
+		Mat Weight Precision:  2
+		texture directory   :  C:\Users\ms\Projects\RebanOriginGame\assets\models\test\
+	Python World class constructor completed
+	processing begun of camera (UniversalCamera):  cam
+	processing begun of mesh:  Plane
+		WARNING: No materials have been assigned: 
+		num positions      :  42
+		num normals        :  42
+		num tangents       :  0
+		num uvs            :  84
+		num uvs2           :  0
+		num colors         :  0
+		num indices        :  66
+		WARNING: # of 0 area faces found:  10
+	processing begun of light (POINT):  PL1
+	WARNING: Only directional (sun) and spot types of lamp are valid for shadows thus ignored: PL1
+	processing begun of light (POINT):  PL2
+	processing begun of light (POINT):  PL3
+========= Writing of JSON file started =========
+	writing mesh:  Plane
+========= Writing of JSON file completed =========
+========= end of processing =========
+elapsed time:  0 min, 0.007 secs

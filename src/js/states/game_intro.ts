@@ -3,31 +3,41 @@ import {world} from "../ecs";
 import {MainState} from "./main";
 
 export class GameIntroState extends State {
-    _logoEle: HTMLImageElement;
+    _logoEle: HTMLImageElement = document.createElement('img');
     _systems = [];
-    _videoEle: HTMLDivElement;
+    _textEle: HTMLSpanElement = document.createElement('span');
+    _videoEle: HTMLDivElement = document.createElement('div');
 
     constructor() {
         super();
-
-        this._logoEle = document.createElement('img');
-        this._videoEle = document.createElement('div');
         this._videoEle.id = 'game-intro';
-        this._videoEle.append(this._logoEle);
     }
 
     async activate(world: IWorld) {
+        const show = (ele: HTMLElement) => {
+            this._videoEle.append(ele);
+            return new Promise(res => setTimeout(async () => {
+                ele.classList.add('show');
+                await this._wait(2000);
+                ele.classList.remove('show');
+                await this._wait(1000);
+                this._videoEle.removeChild(ele);
+                res();
+            }));
+        };
         const showLogo = async (src: string) => {
             await this._waitForImg(this._logoEle, src);
-            this._logoEle.classList.add('show');
-            await this._wait(5000);
-            this._logoEle.classList.remove('show');
-            await this._wait(1000);
+            await show(this._logoEle);
+        };
+        const showText = async (text: string) => {
+            this._textEle.innerText = text;
+            await show(this._textEle);
         };
 
         document.body.insertBefore(this._videoEle, document.body.querySelector('canvas'));
 
-        await showLogo('assets/img/Babylon.svg');
+        await showLogo('images/Babylon.svg');
+        await showText('A production by Marco Alka');
         // more stuff?
 
         await world.changeRunningState(world.getResource(MainState));

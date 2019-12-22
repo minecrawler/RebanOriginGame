@@ -1,6 +1,7 @@
 {
   "name": "reban-origin-game",
   "version": "0.1.0",
+  "private": true,
   "dependencies": {
     "babylonjs": "^4.0.3",
     "babylonjs-loaders": "^4.0.3",
@@ -8,15 +9,27 @@
     "sim-ecs": "github:NSSTC/sim-ecs#master"
   },
   "devDependencies": {
-    "@babel/core": "^7.6.0",
-    "@babel/preset-env": "^7.6.0",
-    "parcel-bundler": "^1.12.3",
+    "arg": "^4.1.2",
+    "copy-webpack-plugin": "^5.1.1",
+    "css-loader": "^3.4.0",
+    "extract-loader": "^3.1.0",
+    "file-loader": "^5.0.2",
+    "fs-extra": "^8.1.0",
+    "html-loader": "^0.5.5",
+    "node-sass": "^4.13.0",
+    "progress-bar-webpack-plugin": "^1.12.1",
     "pug": "^2.0.4",
-    "sass": "^1.22.10",
-    "tslib": "^1.10.0"
+    "pug-html-loader": "^1.1.5",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.1.1",
+    "ts-loader": "^6.2.1",
+    "tslib": "^1.10.0",
+    "typescript": "^3.7.4",
+    "webpack": "^4.41.4"
   },
   "scripts": {
-    "build": "parcel build src/index.pug --public-url \".\"",
-    "dev": "parcel watch src/index.pug --public-url \"\""
+    "build": "node make.js -p",
+    "build-dev": "node make.js",
+    "dev": "node make.js -w"
   }
 }
