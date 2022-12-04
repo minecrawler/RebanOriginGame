@@ -16,7 +16,7 @@
     "file-loader": "^5.0.2",
     "fs-extra": "^8.1.0",
     "html-loader": "^0.5.5",
-    "node-sass": "^4.13.0",
+    "node-sass": "^8.0.0",
     "progress-bar-webpack-plugin": "^1.12.1",
     "pug": "^2.0.4",
     "pug-html-loader": "^1.1.5",
