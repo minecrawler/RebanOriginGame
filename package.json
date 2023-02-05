@@ -10,7 +10,7 @@
   },
   "devDependencies": {
     "arg": "^4.1.2",
-    "copy-webpack-plugin": "^5.1.1",
+    "copy-webpack-plugin": "^11.0.0",
     "css-loader": "^3.4.0",
     "extract-loader": "^3.1.0",
     "file-loader": "^5.0.2",
