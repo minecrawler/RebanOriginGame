@@ -11,7 +11,7 @@
   "devDependencies": {
     "arg": "^4.1.2",
     "copy-webpack-plugin": "^5.1.1",
-    "css-loader": "^3.4.0",
+    "css-loader": "^6.8.1",
     "extract-loader": "^3.1.0",
     "file-loader": "^5.0.2",
     "fs-extra": "^8.1.0",
